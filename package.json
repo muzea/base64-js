@@ -1,0 +1,40 @@
+{
+  "name": "@woodenfish/base64-js",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "ava": "^2.3.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "build": "tsc -t es6 --moduleResolution Node --module CommonJS --outDir dist src/index.ts",
+    "test": "ava"
+  },
+  "engines": {
+    "node": "^10"
+  },
+  "ava": {
+		"compileEnhancements": false,
+		"extensions": [
+			"ts"
+		],
+		"require": [
+			"ts-node/register"
+		]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muzea/base64-js.git"
+  },
+  "author": "muzea <mr.muzea@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/muzea/base64-js/issues"
+  },
+  "homepage": "https://github.com/muzea/base64-js#readme"
+}
