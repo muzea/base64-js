@@ -1,7 +1,8 @@
 {
   "name": "@woodenfish/base64-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -13,7 +14,7 @@
     "typescript": "^3.5.3"
   },
   "scripts": {
-    "build": "tsc -t es6 --moduleResolution Node --module CommonJS --outDir dist src/index.ts",
+    "build": "tsc -t es6 --moduleResolution Node --module CommonJS --outDir dist -d src/index.ts",
     "test": "ava"
   },
   "engines": {

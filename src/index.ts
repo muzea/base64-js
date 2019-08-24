@@ -118,6 +118,11 @@ function fromByteArray(uint8: Uint8Array, std = true) {
   return parts.join('');
 }
 
+/**
+ * 
+ * @param input
+ * @param std default `true`
+ */
 export function encode(input: string, std = true): string {
   const bytes = enc.encode(input);
   return fromByteArray(bytes, std);
